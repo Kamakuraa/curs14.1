@@ -27,7 +27,7 @@ public class Quote {
         return quote;
     }
 
-    public Boolean getFavourite() {
+    public boolean isFavourite() {
         return favourite;
     }
 
