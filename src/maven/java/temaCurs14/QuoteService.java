@@ -19,6 +19,15 @@ public class QuoteService {
         return result;
     }
 
+    public  List<Quote> getQuotesForAuthor(String author){
+        List<Quote> result = new ArrayList<>();
+        for (Quote quote : quotes){
+            if (quote.getAuthor().equals(author));
+            result.add(quote);
+        }
+            return result;
+    }
+
     public List<String> getAuthor(){
         List<String> result = new ArrayList<>();
         for (Quote quote : quotes){

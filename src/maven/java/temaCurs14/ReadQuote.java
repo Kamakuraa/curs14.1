@@ -13,8 +13,8 @@ public class ReadQuote {
 
     }
 
-    public static ArrayList<Quote> readFromFile() throws Exception {
-        ArrayList<Quote> quotes = new ArrayList<>();
+    public static List<Quote> readFromFile() throws Exception {
+        List<Quote> quotes = new ArrayList<>();
         BufferedReader bufferedReader = new BufferedReader(new FileReader("files/quotes.txt"));
         String line;
         int id = 1;
@@ -23,6 +23,7 @@ public class ReadQuote {
         }
         return quotes;
     }
+
 
     private static Quote readQutes(int id, String quoteAlert) {
         String[] quoteData = quoteAlert.split("~");
